@@ -14,6 +14,8 @@ Before exectuing the deployment commands below make sure:
 $ cf cs a9s-postgresql94 postgresql-single-small db
 $ git clone git@github.com:anynines/ghost-on-a9s.git
 $ cd ghost-on-a9s
+$ git submodule init
+$ git submodule update
 $ cp Procfile Ghost/Procfile
 $ cp config.js Ghost/config.js
 $ cd Ghost
