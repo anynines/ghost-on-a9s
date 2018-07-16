@@ -1,4 +1,7 @@
 {
+    "exclude": ["node_modules/**"],
+    "verbose": true,
+    
     "remove-empty-rulesets": true,
     "always-semicolon": true,
     "color-case": "lower",
