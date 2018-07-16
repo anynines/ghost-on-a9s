@@ -146,7 +146,7 @@ var __makeRelativeRequire = function(require, mappings, pref) {
       if (val !== none) return val;
     }
     return require(name);
-  }
+  };
 };
 require.register("app.js", function(exports, require, module) {
 'use strict';

@@ -146,7 +146,7 @@ var __makeRelativeRequire = function(require, mappings, pref) {
       if (val !== none) return val;
     }
     return require(name);
-  }
+  };
 };
 
 require.register("jquery/dist/jquery.js", function(exports, require, module) {
@@ -10558,7 +10558,7 @@ function defaultClearTimeout () {
     } catch (e) {
         cachedClearTimeout = defaultClearTimeout;
     }
-} ())
+} ());
 function runTimeout(fun) {
     if (cachedSetTimeout === setTimeout) {
         //normal enviroments in sane situations
@@ -10695,13 +10695,13 @@ process.emit = noop;
 process.prependListener = noop;
 process.prependOnceListener = noop;
 
-process.listeners = function (name) { return [] }
+process.listeners = function (name) { return []; };
 
 process.binding = function (name) {
     throw new Error('process.binding is not supported');
 };
 
-process.cwd = function () { return '/' };
+process.cwd = function () { return '/'; };
 process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
