@@ -18,6 +18,7 @@ $ git submodule init
 $ git submodule update
 $ cp Procfile Ghost/Procfile
 $ cp config.js Ghost/config.js
+$ cp -r theme Ghost/content/themes/
 $ cd Ghost
 $ npm install
 $ grunt init
