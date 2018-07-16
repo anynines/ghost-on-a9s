@@ -42,7 +42,19 @@ file and [Brunch documentation](http://brunch.io/docs/).
 The theme source files are set up with [SassLint](https://github.com/sasstools/sass-lint),
 [ESLint](https://eslint.org/) as well as [CSScomb](http://csscomb.com/) with anynines configuration
 files for automatic code quality assurance. Before pushing, make sure your code isn't throwing
-any major errors with any of those tools (some minor warnings are okay).
+any major errors with any of those tools (some minor warnings are okay). To do that, you can
+run any of the commands below:
+
+```
+$ sass-lint -v
+$ eslint .
+```
+
+To use CSScomb for cleaning up your stylesheets, you can use: 
+
+```
+$ csscomb src/css
+```
 
 For quality rules, feel free to review `.eslintrc`, `.sasslintrc` and `.csscomb.json`, as well
 as documentation pages for the respective tools. Enjoy!
