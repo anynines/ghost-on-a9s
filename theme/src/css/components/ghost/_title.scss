@@ -1,0 +1,12 @@
+// Custom blog title styling for Ghost
+// Requires @anynines/a9s-bootstrap to work.
+// Version: 1.0
+
+.blog-title {
+  font-weight: $font-weight-light;
+  color: $gray-600;
+
+  .navbar-dark & {
+    color: $white;
+  }
+}

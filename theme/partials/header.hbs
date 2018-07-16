@@ -1,0 +1,30 @@
+<header class="navbar navbar-dark navbar-expand-lg">
+  <nav class="container main-nav">
+    {{#if @blog.logo}}
+    <a class="navbar-brand" href="{{@blog.url}}">
+      <img src="{{@blog.logo}}" alt="{{@blog.title}}" />
+      <span class="blog-title">{{ @blog.title }}</span>
+    </a>
+    {{/if}}
+    
+    {{#if @blog.navigation }}
+    <ul class="navbar-nav">
+      {{#foreach navigation}}
+      <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}">
+        <a href="{{url absolute=" true "}}">{{label}}</a>
+      </li>
+      {{/foreach}}
+      
+      {{#if @labs.subscribers}}
+      <li>
+        <a class="subscribe-button" href="{{@blog.url}}/subscribe/">Subscribe</a>
+      </li>
+      {{else}}
+      <li>
+        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+      </li>
+      {{/if}}
+    </ul>
+    {{/if}}
+  </nav>
+</header>

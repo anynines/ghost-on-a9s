@@ -1,0 +1,43 @@
+// Ghost Subscribe box
+// Requires @anynines/a9s-booostrap to work
+// Version 1.0
+
+.gh-subscribe {
+  background: $gray-200;
+  padding: $spacing-l;
+
+  form {
+    display: flex;
+    height: 50px;
+  }
+
+  button {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+
+  &-title {
+    font-size: $font-size-l;
+    font-weight: $font-weight-bold;
+    color: $black;
+  }
+
+  &-rss {
+    margin-top: $spacing-m;
+    display: block;
+  }
+
+  .form-group {
+    flex: 1;
+    padding-right: $spacing-m;
+  }
+
+  .subscribe-email {
+    @extend .form-control;
+  }
+
+  .subscribe-email,
+  .button {
+    height: 50px;
+  }
+}

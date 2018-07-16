@@ -1,0 +1,145 @@
+.post {
+  padding-bottom: $spacing-m;
+
+  @include media-breakpoint-up(lg) {
+    margin: 0;
+  }
+
+  &-category {
+    @extend .text-muted;
+    font-weight: $font-weight-bold;
+    margin: 0;
+    padding: $spacing-m 0;
+
+    a {
+      @extend .text-muted;
+    }
+  }
+
+
+  &-title {
+    margin: 0;
+    color: $orange;
+    padding-bottom: $spacing-xl;
+
+    a {
+      text-decoration: none;
+      color: $orange;
+
+      &:hover {
+        border-bottom: 2px solid $gray-400;
+      }
+    }
+  }
+
+  &-byline,
+  &-meta {
+    @extend .text-muted;
+    @extend .text-left;
+    padding: $spacing-s;
+    margin-top: $spacing-l 0;
+    border-top: 1px solid $gray-400;
+    border-bottom: 1px solid $gray-400;
+
+    span,
+    time {
+      color: $black;
+    }
+  }
+
+  &-author-avatar {
+    float: left;
+    padding-right: $spacing-m;
+  }
+
+  &-content {
+    padding-top: $spacing-l;
+
+    img {
+      max-width: 100%;
+    }
+
+    table {
+      padding-bottom: $spacing-l;
+      max-width: 100%;
+    }
+
+    p,
+    li,
+    ul {
+      @include media-breakpoint-up(lg) {
+        font-size: 112.5%;
+      }
+    }
+
+    p,
+    li {
+      a {
+        text-decoration: none;
+        color: $black;
+        border-bottom: 1px solid $orange;
+
+        &[href^='mailto'] {
+          &::before {
+            content: '✉️ ';
+          }
+        }
+
+        &:hover {
+          color: $orange;
+          border-bottom: 1px solid $orange;
+        }
+      }
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: $spacing-l;
+      font-weight: $font-weight-bold;
+      padding-bottom: $spacing-s;
+      margin-bottom: $spacing-m;
+      border-bottom: 1px solid $gray-400;
+    }
+
+    pre,
+    code {
+      font-family: $font-family-monospace;
+    }
+
+    pre {
+      padding: $spacing-s $spacing-m;
+      border-radius: $border-radius;
+    }
+
+    blockquote {
+      padding: $spacing-s $spacing-m;
+      border-left: 2px solid $orange;
+      color: $orange;
+      font-size: $font-size-xl;
+      margin: $spacing-m 0;
+      line-height: 1.25;
+
+      p {
+        line-height: 1.25;
+        margin: 0;
+      }
+    }
+  }
+
+  &-subscribe {
+    padding: $spacing-l 0;
+  }
+
+  &-footer {
+    @extend .text-muted;
+    border-top: 1px solid $gray-400;
+    padding-top: $spacing-m;
+  }
+
+  &-comments {
+    padding-top: $spacing-xl;
+  }
+}

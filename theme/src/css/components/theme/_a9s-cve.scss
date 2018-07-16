@@ -1,0 +1,14 @@
+.post {
+  margin: 0 auto $spacing-xl;
+  background: $white;
+  padding: $spacing-l;
+  box-shadow: $box-shadow-l;
+}
+
+.pagination {
+  margin-top: $spacing-l;
+}
+
+.container {
+  max-width: 800px;
+}

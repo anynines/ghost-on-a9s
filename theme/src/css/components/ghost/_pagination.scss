@@ -1,0 +1,28 @@
+// Custom pagination styling for Ghost (doesn't follow Bootstrap default markup)
+// Requires @anynines/a9s-bootstrap to work.
+// Version: 1.0
+
+.pagination {
+  display: flex;
+  padding: $spacing-m 0;
+  font-size: $font-size-sm;
+
+  .page-number {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .newer-posts,
+  .older-posts {
+    @extend .btn;
+    @extend .btn-sm;
+    @extend .btn-outline-primary;
+
+    &:hover {
+      @extend .btn-default;
+    }
+  }
+}
