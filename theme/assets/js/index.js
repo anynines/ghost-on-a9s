@@ -146,7 +146,7 @@ var __makeRelativeRequire = function(require, mappings, pref) {
       if (val !== none) return val;
     }
     return require(name);
-  };
+  }
 };
 require.register("app.js", function(exports, require, module) {
 'use strict';
@@ -231,7 +231,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'd
 var app = new _app2['default']();
 });
 
-require.alias("process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
+require.alias("brunch/node_modules/process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
   
 
 // Auto-loaded modules from config.npm.globals.

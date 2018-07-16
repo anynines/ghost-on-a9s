@@ -1972,7 +1972,7 @@ a.text-dark:hover, a.text-dark:focus {
 .text-body {
   color: #1d222c !important; }
 
-.text-muted, .post-category, .post-category a, .post-byline, .post-meta, .post-footer {
+.text-muted, .footer .nav a, .post-category, .post-category a, .post-byline, .post-meta, .post-footer {
   color: #666d7c !important; }
 
 .text-black-50 {
@@ -4139,6 +4139,16 @@ a {
 
 .footer {
   font-size: 0.875rem; }
+  .footer .nav {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .footer .nav li {
+      display: inline; }
+      .footer .nav li::after {
+        content: ' • '; }
+      .footer .nav li:last-child::after {
+        content: ''; }
 
 .content {
   padding: 2rem 0; }
