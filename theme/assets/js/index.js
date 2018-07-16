@@ -231,7 +231,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'd
 var app = new _app2['default']();
 });
 
-require.alias("brunch/node_modules/process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
+require.alias("process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
   
 
 // Auto-loaded modules from config.npm.globals.
