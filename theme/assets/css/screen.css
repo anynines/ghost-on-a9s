@@ -4297,6 +4297,12 @@ a {
   .post-comments {
     padding-top: 2rem; }
 
+.navbar-dark {
+  background: #505d78; }
+
+.navbar-brand img {
+  margin-right: 0.5rem; }
+
 .post {
   margin: 0 auto 2rem;
   background: #fff;
